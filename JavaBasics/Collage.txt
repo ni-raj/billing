@@ -1,0 +1,70 @@
+class B{
+public static void main(String args[])
+{
+  A obj = new A(20,30);
+  System.out.println(obj.a);
+  System.out.println(obj.b);
+  obj.abc();
+  A.pqr();
+}
+}
+*****************************************************************************************
+public class A{
+  int a,b;
+  static int q=20,w=30;
+  A(int a,int b){
+   this.a=a;
+   this.b=b;
+  }
+  public void abc(){
+   int sum;
+   sum=a+b;
+   System.out.println(sum);
+  
+ }
+  public static void pqr(){
+   int sub;
+   sub=q-w;
+   System.out.println(sub);
+  }
+}
+********************************************************************************************
+class X{
+int fact(int num){
+ if(num==1){
+ return 1;
+ }
+ else{
+ return num*fact(num-1);
+  }
+ }
+} 
+
+public static void main(String args[]){
+ int no = 7,facto;
+ facto=fact(no);
+ System.out.println(facto); 
+  }
+}
+********************************************************************************************
+class X{
+int fact(int num){
+ if(num==1){
+             return 1;
+           }
+ else{
+       return num*fact(num-1);
+     }
+ }
+
+}
+
+class Y{
+
+public static void main(String args[]){
+ int no = 7,facto;
+ X obj = new X();
+ facto=obj.fact(no);
+ System.out.println(facto); 
+  }
+}
