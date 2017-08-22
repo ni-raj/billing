@@ -68,3 +68,33 @@ public static void main(String args[]){
  System.out.println(facto); 
   }
 }
+*********************************
+import java.util.Scanner;
+class X{
+int fact(int num){
+ if(num==1){
+             return 1;
+           }
+ else{
+       return num*fact(num-1);
+     }
+ }
+
+}
+
+class Y{
+
+public static void main(String args[]){
+ 
+ Scanner scan = new Scanner(System.in);
+ 
+ X obj = new X();
+ 
+ System.out.println(obj.fact(scan.nextInt())); 
+ 
+
+ }
+
+
+
+}
